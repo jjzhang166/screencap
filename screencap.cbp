@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="screencap" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\screencap" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\screencap" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-march=native" />
+			<Add option="--fast-math" />
+		</Compiler>
+		<Linker>
+			<Add library="gdi32" />
+			<Add library="z" />
+			<Add library="comctl32" />
+			<Add library="comdlg32" />
+			<Add library="winmm" />
+		</Linker>
+		<Unit filename="AsyncTimer.h" />
+		<Unit filename="ErrorHandler.h" />
+		<Unit filename="FrameGrabber.h" />
+		<Unit filename="Image.h" />
+		<Unit filename="ImageCompressed.h" />
+		<Unit filename="License.cpp" />
+		<Unit filename="License.h" />
+		<Unit filename="MngFile.cpp" />
+		<Unit filename="MngFile.h" />
+		<Unit filename="OptionsDebug.h" />
+		<Unit filename="Pixel.h" />
+		<Unit filename="Png.cpp" />
+		<Unit filename="Png.h" />
+		<Unit filename="Record.h" />
+		<Unit filename="Settings.cpp" />
+		<Unit filename="Settings.h" />
+		<Unit filename="SettingsFrame.h" />
+		<Unit filename="StartupDialog.h" />
+		<Unit filename="StereoFrame.h" />
+		<Unit filename="System.h" />
+		<Unit filename="Task.h" />
+		<Unit filename="TaskArray.h" />
+		<Unit filename="TaskData.h" />
+		<Unit filename="WaveDeviceIn.h" />
+		<Unit filename="WaveFileOut.h" />
+		<Unit filename="WavePump.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="screencap.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

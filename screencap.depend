@@ -1,0 +1,354 @@
+# depslib dependency file v1.0
+1343567036 source:d:\home\torbjorr\skrivbord\screencap\main.cpp
+	"StartupDialog.h"
+	<ctime>
+	<cstdio>
+
+1343567036 d:\home\torbjorr\skrivbord\screencap\framegrabber.h
+	<windows.h>
+	"Pixel.h"
+
+1343567036 d:\home\torbjorr\skrivbord\screencap\image.h
+	"FrameGrabber.h"
+	"FrameGrabber.h"
+	"ImageCompressed.h"
+	<cstdlib>
+
+1342982491 d:\home\torbjorr\skrivbord\screencap\pngout.h
+	"TmpBuffer.h"
+	<png.h>
+	<zlib.h>
+
+1342982600 d:\home\torbjorr\skrivbord\screencap\tmpbuffer.h
+	"FileOut.h"
+	<cstring>
+	<cstdlib>
+
+1342984197 d:\home\torbjorr\skrivbord\screencap\fileout.h
+	<cstdio>
+
+1343567036 d:\home\torbjorr\skrivbord\screencap\taskarray.h
+	"Task.h"
+	<new>
+
+1343567036 d:\home\torbjorr\skrivbord\screencap\task.h
+	"TaskData.h"
+	"error.h"
+	<windows.h>
+
+1343567036 d:\home\torbjorr\skrivbord\screencap\taskdata.h
+	"Image.h"
+	"ImageCompressed.h"
+	"MngFile.h"
+	"SettingsFrame.h"
+
+1342886428 d:\home\torbjorr\skrivbord\screencap\prefix.h
+
+1342884510 d:\home\torbjorr\skrivbord\screencap\error.h
+
+1342885635 d:\home\torbjorr\skrivbord\screencap\filename.h
+
+1342884694 source:d:\home\torbjorr\skrivbord\screencap\error.cpp
+	"error.h"
+
+1343567036 d:\home\torbjorr\skrivbord\screencap\asynctimer.h
+	<windows.h>
+
+1343314565 d:\home\torbjorr\skrivbord\screencap\pixel.h
+	<stdint.h>
+	<cassert>
+
+1343567036 d:\home\torbjorr\skrivbord\screencap\imagecompressed.h
+	"Png.h"
+	"MngFile.h"
+	"OptionsDebug.h"
+	<cstdlib>
+	<zlib.h>
+
+1343567036 d:\home\torbjorr\skrivbord\screencap\png.h
+	<zlib.h>
+	<stdint.h>
+
+1343567036 d:\home\torbjorr\skrivbord\screencap\mngfile.h
+	<windows.h>
+	<cstdio>
+	<cassert>
+
+1343567036 source:d:\home\torbjorr\skrivbord\screencap\png.cpp
+	"Png.h"
+
+1343589010 source:d:\home\torbjorr\skrivbord\screencap\screencap.rc
+	"StartupDialog.h"
+	<windows.h>
+
+1343645478 d:\home\torbjorr\skrivbord\screencap\startupdialog.h
+	"Record.h"
+	"OptionsDebug.h"
+	"License.h"
+	<commctrl.h>
+
+1343575078 d:\home\torbjorr\skrivbord\screencap\settings.h
+	"SettingsFrame.h"
+	"System.h"
+	<ctime>
+	<algorithm>
+	<cstdio>
+
+1343414262 source:d:\home\torbjorr\skrivbord\screencap\startupdialog.cpp
+	"StartupDialog.h"
+
+1343567036 d:\home\torbjorr\skrivbord\screencap\optionsdebug.h
+	<cstdio>
+
+1343567036 d:\home\torbjorr\skrivbord\screencap\settingsframe.h
+	<windows.h>
+	"Png.h"
+	<algorithm>
+
+1343567036 d:\home\torbjorr\skrivbord\screencap\system.h
+	<windows.h>
+
+1343567036 source:d:\home\torbjorr\skrivbord\screencap\settings.cpp
+	"Settings.h"
+	"OptionsDebug.h"
+	<cstdlib>
+
+1343567036 source:d:\home\torbjorr\skrivbord\screencap\mngfile.cpp
+	"MngFile.h"
+
+1343589537 d:\home\torbjorr\skrivbord\screencap\record.h
+	<windows.h>
+	"TaskArray.h"
+	"AsyncTimer.h"
+	"System.h"
+	"Settings.h"
+
+1343587181 d:\home\torbjorr\skrivbord\screencap\license.h
+
+1343587707 source:d:\home\torbjorr\skrivbord\screencap\license.cpp
+
+1343567036 source:\\127.0.0.1\torbjorr\dokument\screencap\mngfile.cpp
+	"MngFile.h"
+
+1343567036 \\127.0.0.1\torbjorr\dokument\screencap\mngfile.h
+	<windows.h>
+	<cstdio>
+	<cassert>
+
+1343567036 source:\\127.0.0.1\torbjorr\dokument\screencap\png.cpp
+	"Png.h"
+
+1343567036 \\127.0.0.1\torbjorr\dokument\screencap\png.h
+	<zlib.h>
+	<stdint.h>
+
+1343567036 source:\\127.0.0.1\torbjorr\dokument\screencap\settings.cpp
+	"Settings.h"
+	"OptionsDebug.h"
+	<cstdlib>
+
+1343575078 \\127.0.0.1\torbjorr\dokument\screencap\settings.h
+	"SettingsFrame.h"
+	"System.h"
+	<ctime>
+	<algorithm>
+	<cstdio>
+
+1343567036 \\127.0.0.1\torbjorr\dokument\screencap\settingsframe.h
+	<windows.h>
+	"Png.h"
+	<algorithm>
+
+1343567036 \\127.0.0.1\torbjorr\dokument\screencap\system.h
+	<windows.h>
+
+1343567036 \\127.0.0.1\torbjorr\dokument\screencap\optionsdebug.h
+	<cstdio>
+
+1343567036 source:\\127.0.0.1\torbjorr\dokument\screencap\main.cpp
+	"StartupDialog.h"
+	<ctime>
+	<cstdio>
+
+1343645478 \\127.0.0.1\torbjorr\dokument\screencap\startupdialog.h
+	"Record.h"
+	"OptionsDebug.h"
+	"License.h"
+	<commctrl.h>
+
+1343589537 \\127.0.0.1\torbjorr\dokument\screencap\record.h
+	<windows.h>
+	"TaskArray.h"
+	"AsyncTimer.h"
+	"System.h"
+	"Settings.h"
+
+1343567036 \\127.0.0.1\torbjorr\dokument\screencap\taskarray.h
+	"Task.h"
+	<new>
+
+1343567036 \\127.0.0.1\torbjorr\dokument\screencap\task.h
+	"TaskData.h"
+	"error.h"
+	<windows.h>
+
+1343567036 \\127.0.0.1\torbjorr\dokument\screencap\taskdata.h
+	"Image.h"
+	"ImageCompressed.h"
+	"MngFile.h"
+	"SettingsFrame.h"
+
+1343567036 \\127.0.0.1\torbjorr\dokument\screencap\image.h
+	"FrameGrabber.h"
+	"FrameGrabber.h"
+	"ImageCompressed.h"
+	<cstdlib>
+
+1343567036 \\127.0.0.1\torbjorr\dokument\screencap\framegrabber.h
+	<windows.h>
+	"Pixel.h"
+
+1343314565 \\127.0.0.1\torbjorr\dokument\screencap\pixel.h
+	<stdint.h>
+	<cassert>
+
+1343567036 \\127.0.0.1\torbjorr\dokument\screencap\imagecompressed.h
+	"Png.h"
+	"MngFile.h"
+	"OptionsDebug.h"
+	<cstdlib>
+	<zlib.h>
+
+1342884510 \\127.0.0.1\torbjorr\dokument\screencap\error.h
+
+1343567036 \\127.0.0.1\torbjorr\dokument\screencap\asynctimer.h
+	<windows.h>
+
+1343587181 \\127.0.0.1\torbjorr\dokument\screencap\license.h
+
+1343589010 source:\\127.0.0.1\torbjorr\dokument\screencap\screencap.rc
+	"StartupDialog.h"
+	<windows.h>
+
+1343587707 source:\\127.0.0.1\torbjorr\dokument\screencap\license.cpp
+
+1343567036 source:d:\home\torbjorr\dokument\screencap\mngfile.cpp
+	"MngFile.h"
+
+1343759078 d:\home\torbjorr\dokument\screencap\mngfile.h
+
+1343567036 source:d:\home\torbjorr\dokument\screencap\png.cpp
+	"Png.h"
+
+1343567036 d:\home\torbjorr\dokument\screencap\png.h
+	<zlib.h>
+	<stdint.h>
+
+1343722147 source:d:\home\torbjorr\dokument\screencap\settings.cpp
+
+1343901551 d:\home\torbjorr\dokument\screencap\settings.h
+	"SettingsFrame.h"
+	"System.h"
+	"ErrorHandler.h"
+	<ctime>
+	<algorithm>
+	<cstdio>
+
+1343909087 d:\home\torbjorr\dokument\screencap\settingsframe.h
+	<windows.h>
+	"Png.h"
+	<algorithm>
+
+1343567036 d:\home\torbjorr\dokument\screencap\system.h
+	<windows.h>
+
+1343567036 d:\home\torbjorr\dokument\screencap\optionsdebug.h
+	<cstdio>
+
+1343567036 source:d:\home\torbjorr\dokument\screencap\main.cpp
+	"StartupDialog.h"
+	<ctime>
+	<cstdio>
+
+1343908785 d:\home\torbjorr\dokument\screencap\startupdialog.h
+	"Record.h"
+	"OptionsDebug.h"
+	"License.h"
+	<commctrl.h>
+
+1343904431 d:\home\torbjorr\dokument\screencap\record.h
+	<windows.h>
+	"TaskArray.h"
+	"AsyncTimer.h"
+	"System.h"
+	"Settings.h"
+	"WavePump.h"
+
+1343723520 d:\home\torbjorr\dokument\screencap\taskarray.h
+	"Task.h"
+	<new>
+
+1343755490 d:\home\torbjorr\dokument\screencap\task.h
+	"TaskData.h"
+	"error.h"
+	<windows.h>
+
+1343909040 d:\home\torbjorr\dokument\screencap\taskdata.h
+	"Image.h"
+	"ImageCompressed.h"
+	"MngFile.h"
+	"SettingsFrame.h"
+
+1343567036 d:\home\torbjorr\dokument\screencap\image.h
+	"FrameGrabber.h"
+	"FrameGrabber.h"
+	"ImageCompressed.h"
+	<cstdlib>
+
+1343567036 d:\home\torbjorr\dokument\screencap\framegrabber.h
+	<windows.h>
+	"Pixel.h"
+
+1343314565 d:\home\torbjorr\dokument\screencap\pixel.h
+	<stdint.h>
+	<cassert>
+
+1343899671 d:\home\torbjorr\dokument\screencap\imagecompressed.h
+	"Png.h"
+	"MngFile.h"
+	"OptionsDebug.h"
+	<cstdlib>
+	<zlib.h>
+
+1342884510 d:\home\torbjorr\dokument\screencap\error.h
+
+1343567036 d:\home\torbjorr\dokument\screencap\asynctimer.h
+	<windows.h>
+
+1343587181 d:\home\torbjorr\dokument\screencap\license.h
+
+1343908444 source:d:\home\torbjorr\dokument\screencap\screencap.rc
+	"StartupDialog.h"
+	<windows.h>
+
+1343587707 source:d:\home\torbjorr\dokument\screencap\license.cpp
+
+1343667993 d:\home\torbjorr\dokument\screencap\wavepump.h
+	"WaveFileOut.h"
+	"WaveDeviceIn.h"
+
+1343721211 d:\home\torbjorr\dokument\screencap\wavefileout.h
+	<windows.h>
+	"StereoFrame.h"
+	<cstdlib>
+
+1343661980 d:\home\torbjorr\dokument\screencap\stereoframe.h
+	<stdint.h>
+
+1343667204 d:\home\torbjorr\dokument\screencap\wavedevicein.h
+	<windows.h>
+	"StereoFrame.h"
+	<cstdlib>
+
+1343901344 d:\home\torbjorr\dokument\screencap\errorhandler.h
+

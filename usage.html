@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <title>ScreenCap</title>
+  <meta name="generator" content="Amaya, see http://www.w3.org/Amaya/" />
+  <style type="text/css">
+<!--
+p{font-size: 1em}
+h1{font-size: 2.5em;margin-top: 2.5em;margin-bottom: 0em}
+h2{font-size: 2.0em;margin-top 2em;margin-bottom:0em}
+h3{font-size: 1.5em;margin-top 1.5em;margin-bottom:0em}
+h4{font-size: 1em;margin-top 1em;margin-bottom:0em;font-weight:bold}
+-->
+
+
+
+  </style>
+</head>
+
+<body>
+<h1>ScreenCap</h1>
+
+<div class="toc">
+<ul>
+  <li><a href="#L2634">1. About</a></li>
+  <li><a href="#L2638">2. Usage</a></li>
+  <li><a href="#L2642">3. Settings</a>
+    <ul>
+      <li><a href="#L2644">3.1. Window</a></li>
+      <li><a href="#L147">3.2. Crop rect</a></li>
+      <li><a href="#L2648">3.3. Output file</a></li>
+      <li><a href="#L2652">3.4. Frame rate</a></li>
+      <li><a href="#L2656">3.5. Benchmark</a></li>
+      <li><a href="#L2660">3.6. Compression method</a>
+        <ul>
+          <li><a href="#L2664">3.6.1. Z_DEFAULT_STRATEGY</a></li>
+          <li><a href="#L2668">3.6.2. Z_FILTERED</a></li>
+          <li><a href="#L2672">3.6.3. Z_RLE</a></li>
+          <li><a href="#L2676">3.6.4. Z_HUFFMAN_ONLY</a></li>
+          <li><a href="#L2680">3.6.5. Z_FIXED</a></li>
+        </ul>
+      </li>
+      <li><a href="#L2684">3.7. Compression level</a></li>
+      <li><a href="#L2688">3.8. #Threads</a></li>
+      <li><a href="#L2692">3.9. Process priority</a></li>
+    </ul>
+  </li>
+  <li><a href="#L2715">4. Bugs and other issues</a>
+    <ul>
+      <li><a href="#L2717">4.1. Window selection</a></li>
+      <li><a href="#L2721">4.2. Output file</a></li>
+      <li><a href="#L2725">4.3. Audio track</a></li>
+      <li><a href="#L232">4.4 Compilation of the program</a></li>
+      <li><a href="#L236">4.5 Disclaimer of warranty</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<h2 id="L2634">1. About</h2>
+
+<p>ScreenCap is a desktop recording program that allows you to record your
+desktop or another window.</p>
+
+<h2 id="L2638">2. Usage</h2>
+
+<p>To record choose the settings and click Record. When you are done, click
+Stop.</p>
+
+<h2 id="L2642">3. Settings</h2>
+
+<h3 id="L2644">3.1. Window</h3>
+
+<p>Click on Window to select a window. When the Window button is pushed, click
+in the Window you want to record. To select the desktop window, click in the
+titlebar of any window. When you select a window, ScreenCap automatically
+centers it to make shure the entire window is visible.</p>
+
+<h3 id="L147">3.2. Crop rect</h3>
+
+<p>Select the width and height of output video. Note that the rectangle is
+always centered.</p>
+
+<h3 id="L2648">3.3. Output file</h3>
+
+<p>Click on output file to select output file. The opened dialog box should be
+familiar.</p>
+
+<h3 id="L2652">3.4. Frame rate</h3>
+
+<p>The frame rate sets the screenshot rate. When Benchmark is selected, this
+setting has no effect.</p>
+
+<h3 id="L2656">3.5. Benchmark</h3>
+
+<p>Activate Benchmark to measure the maximum frame rate the system can perform
+using the compression and system usage settings.</p>
+
+<h3 id="L2660">3.6. Compression method</h3>
+
+<p>The compression method determines the algorithm chosen by zlib. These are
+probably better documented by the zlib project.</p>
+
+<h4 id="L2664">3.6.1. Z_DEFAULT_STRATEGY</h4>
+
+<p>This algorithm gives good compression at expence of CPU usage</p>
+
+<h4 id="L2668">3.6.2. Z_FILTERED</h4>
+
+<p>Each frame produced by ScreenCap is actually encoded using the PNG
+difference filter. Select Z_FILTERED if you want zlib take advantage of
+that.</p>
+
+<h4 id="L2672">3.6.3. Z_RLE</h4>
+
+<p>Force zlib to use run-length encoding. This is cheaper than
+Z_DEFAULT_STRATEGY.</p>
+
+<h4 id="L2676">3.6.4. Z_HUFFMAN_ONLY</h4>
+
+<p>This option forces zlib to not use any string comparison. Using only Huffman
+encoding is even cheaper than Z_RLE.</p>
+
+<h4 id="L2680">3.6.5. Z_FIXED</h4>
+
+<p>Force zlib to use a fixed block size.</p>
+
+<h3 id="L2684">3.7. Compression level</h3>
+
+<p>Select 1 for a large file and small CPU usage and 9 for the opposite.</p>
+
+<h3 id="L2688">3.8. #Threads</h3>
+
+<p>This setting sets the upper limit of how many encoding threads that the
+program will run. The highest value corresponds to the number of logical
+processors the machine has.</p>
+
+<h3 id="L2692">3.9. Process priority</h3>
+
+<p>This setting tells the scheduler in the operating system how much time it
+should give ScreenCap. Beginning with the process with highest priority, the
+order is</p>
+<ol>
+  <li>REALTIME_PRIORITY_CLASS</li>
+  <li>HIGH_PRIORITY_CLASS</li>
+  <li>ABOVE_NORMAL_PRIORITY_CLASS</li>
+  <li>NORMAL_PRIORITY_CLASS</li>
+  <li>BELOW_NORMAL_PRIORITY_CLASS</li>
+  <li>IDLE_PRIORITY_CLASS</li>
+</ol>
+
+<h2 id="L2715">4. Bugs and other issues</h2>
+
+<h3 id="L2717">4.1. Window selection</h3>
+
+<p>The window selection seems a bit confusing. What does WindowFromPoint really
+return?</p>
+
+<h3 id="L2721">4.2. Output file</h3>
+
+<p>Currently, the program just dumps a huge list of png files prefixed by given
+output filename. The audio track will also use this prefix followed by
+"-audio.wav". In a future release, the individual frames should be embedded
+into a MNG-VLC stream. I have not found an example file though so I cannot test
+if avconv takes an MNG.</p>
+
+<h3 id="L2725">4.3. Audio track</h3>
+
+<p>For now the audio track is just a CD quality RIFF-WAVE file. It should be
+possible to choose sample rate, bit depth and number of channels. Also the
+input is currently just WAVE_MAPPER. The MIDI_MAPPER has disappeared in recent
+versions of Microsoft Windows. What will happen to WAVE_MAPPER?</p>
+
+<h3 id="L232">4.4 Compilation of the program</h3>
+
+<p>ScreenCap was build using Code::Blocks and MinGW. If you do not want to use
+Code::Blocks, just compile all cpp-files and link them together with zlib and
+the nessecary Windows libraries: gdi32 user32 and winmm.</p>
+
+<h3 id="L236">4.5 Disclaimer of warranty</h3>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; ithout even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the <a href="gpl.html">GNU General Public
+License</a> for more details.</p>
+
+<p></p>
+</body>
+</html>

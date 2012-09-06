@@ -1,0 +1,95 @@
+/* COFF information not part of RC
+   Time stamp: 1343386907
+
+   Type: dialog
+   COFF information not part of RC
+   Time stamp: 1343386907
+
+   Name: 1
+   COFF information not part of RC
+   Time stamp: 1343386907.  */
+
+
+#include "StartupDialog.h"
+#include <windows.h>
+
+LANGUAGE 0, 0
+
+STARTUPDLG_ID DIALOGEX 0, 0, 244, 170
+STYLE 0x90c800c4
+EXSTYLE 0x101
+CAPTION "ScreenCap"
+FONT 8, "MS Shell Dlg"
+	{
+	AUTOCHECKBOX "Window",STARTUPDLG_WINDOW_SELECT, 4, 4, 50, 14, 0x50011003, 0x4, 0
+	LTEXT "<- Click [Window] to select source window", STARTUPDLG_WINDOW_DISPLAY, 58, 4, 184, 16, 0x50020000, 0x4, 0
+	LTEXT "Crop rect (w h)",STARTUPDLG_WINDOW_CROP_LABEL,4, 22, 50 , 10 , 0x50020000,0x4,0
+	EDITTEXT STARTUPDLG_WINDOW_CROP_WIDTH, 58, 22, 25, 12, 0x50010082, 0x204, 0
+	EDITTEXT STARTUPDLG_WINDOW_CROP_HEIGHT, 87, 22, 25, 12, 0x50010082, 0x204, 0
+	PUSHBUTTON "Output file",STARTUPDLG_FILE_SELECT, 4, 40, 50, 14, 0x50010000, 0x4, 0
+	EDITTEXT STARTUPDLG_FILE_TEXT, 58, 40, 184, 12, 0x50010080, 0x204, 0
+	LTEXT "Frame rate/fps", STARTUPDLG_FRAMERATE_LABEL, 4, 58, 52, 10, 0x50020000, 0x4, 0
+	EDITTEXT STARTUPDLG_FRAMERATE_INPUT, 58, 58, 25, 12, 0x50010082, 0x204, 0
+	AUTOCHECKBOX "Benchmark", STARTUPDLG_FRAMERATE_BENCHMARK, 108, 58, 50, 14, 0x50011003, 0x4, 0
+	LTEXT "Compr. method", STARTUPDLG_COMPRESSION_METHOD_LABEL, 4, 76, 50, 10, 0x50020000, 0x4, 0
+	COMBOBOX STARTUPDLG_COMPRESSION_METHOD_SELECT, 58, 76, 100, 62, 0x50010202|CBS_DROPDOWNLIST, 0x4, 0
+	LTEXT "Compress. level", STARTUPDLG_COMPRESSION_LEVEL_LABEL, 162, 76, 50, 10, 0x50020000, 0x4, 0
+	EDITTEXT STARTUPDLG_COMPRESSION_LEVEL_INPUT, 216, 76, 25, 12, 0x50010082, 0x204, 0
+//	LTEXT "Buffer size", STARTUPDLG_BUFFER_SIZE_LABEL, 4, 76, 43, 10, 0x50020000, 0x4, 0
+//	EDITTEXT STARTUPDLG_BUFFER_SIZE_INPUT, 58, 76, 100, 12, 0x50010082, 0x204, 0
+//	COMBOBOX STARTUPDLG_BUFFER_SIZE_UNIT, 162, 76, 50, 48, 0x50010202|CBS_DROPDOWNLIST, 0x4, 0
+	LTEXT "#Threads", STARTUPDLG_THREAD_COUNT_LABEL, 4, 94, 55, 10, 0x50020000, 0x4, 0
+	RTEXT "Text", STARTUPDLG_THREAD_COUNT_DISPLAY, 58, 94, 25, 10, 0x50020002, 0x4, 0
+	CONTROL "Text", STARTUPDLG_THREAD_COUNT_TRACKBAR, "msctls_trackbar32", 0x50000000, 87, 94, 123, 14, 0x4, 0
+	LTEXT "Proc priority", STARTUPDLG_PROC_PRIO_LABEL, 4, 112, 43, 10, 0x50020000, 0x4, 0
+	COMBOBOX STARTUPDLG_PROC_PRIO_SELECT, 58, 112, 150, 84, 0x50010202|CBS_DROPDOWNLIST, 0x4, 0
+	PUSHBUTTON "Record", STARTUPDLG_RECORD, 4, 130, 50, 14, 0x50010000, 0x4, 0
+	PUSHBUTTON "Stop", STARTUPDLG_STOP, 58, 130, 50, 14, 0x50010000, 0x4, 0
+	LTEXT "Actual frame rate", STARTUPDLG_FRAMERATE_RESULT_LABEL, 112, 130, 50, 10, 0x50020000, 0x4, 0
+	RTEXT "",STARTUPDLG_FRAMERATE_RESULT_DISPLAY, 166, 130, 75, 12,0x50020000, 0x4, 0
+	PUSHBUTTON "About", STARTUPDLG_ABOUT, 58, 152, 50, 14, 0x50010000, 0x4, 0
+	}
+
+/* Type: version
+   COFF information not part of RC
+   Time stamp: 1343386907
+
+   Name: 1
+   COFF information not part of RC
+   Time stamp: 1343386907.  */
+
+1 VERSIONINFO
+FILEVERSION 1, 0, 0, 0
+PRODUCTVERSION 1, 0, 0, 0
+FILEFLAGSMASK 0x3f
+FILEOS 0x4
+	{
+    BLOCK "StringFileInfo"
+		{
+        BLOCK "040904E4"
+			{
+            VALUE "CompanyName",      ""
+            VALUE "FileDescription",  "Desktop recording program"
+            VALUE "FileVersion",      "1.0.0.0"
+            VALUE "InternalName",     "Screencap"
+            VALUE "LegalCopyright",   "Torbjörn Rathsman 2012"
+            VALUE "LegalTrademarks1", ""
+            VALUE "LegalTrademarks2", ""
+            VALUE "OriginalFilename", "screencap.exe"
+            VALUE "ProductName",      "ScreenCap"
+            VALUE "ProductVersion",   "1.0.0.0"
+			}
+		}
+
+    BLOCK "VarFileInfo"
+		{
+        /* The following line should only be modified for localized versions.     */
+        /* It consists of any number of WORD,WORD pairs, with each pair           */
+        /* describing a language,codepage combination supported by the file.      */
+        /*                                                                        */
+        /* For example, a file might have values "0x409,1252" indicating that it  */
+        /* supports English language (0x409) in the Windows ANSI codepage (1252). */
+
+        VALUE "Translation", 0x409, 1252
+		}
+	}
