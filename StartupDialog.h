@@ -36,8 +36,7 @@
 #include "OptionsDebug.h"
 #include "License.h"
 #include <commctrl.h>
-
-
+#include <windowsx.h>
 
 class StartupDialog:public ErrorHandler
 	{
@@ -427,7 +426,7 @@ class StartupDialog:public ErrorHandler
 					break;
 
 				case WM_LBUTTONDOWN:
-					(( StartupDialog* )GetWindowLongPtr( handle, DWLP_USER ) )->windowSelect(LOWORD(lParam),HIWORD(lParam));
+					(( StartupDialog* )GetWindowLongPtr( handle, DWLP_USER ) )->windowSelect(GET_X_LPARAM(lParam),GET_Y_LPARAM(lParam));
 					break;
 
 				case WM_CLOSE:
